@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- FONTAWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="tennis-style.css">
+
+    <title>Tennis</title>
+</head>
+<body>
+    <div id="container" class="container">
+        <img src="tennis-players.jpg" alt="tennis">
+        <h3>PingPong ScoreKeeper</h3>
+        <p><span id="first">0</span> to <span id="second">0</span></p>
+        <select name="" id="max-score" onchange="ol()">
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+            <option value="13">13</option>
+            <option value="14">14</option>
+            <option value="15">15</option>
+            <option value="16">16</option>
+            <option value="17">17</option>
+            <option value="18">18</option>
+            <option value="19">19</option>
+            <option value="20">20</option>
+        </select>
+        <div class="btn-con">
+            <button id="play1">+Player1</button>
+            <button id="play2" disabled>+Player2</button>
+        </div>
+        <button id="reset">Reset</button>
+        <div class="footer">
+            <a href="#"><i class="fa-brands fa-telegram"></i> Telegram</a>
+            <a href="#"><i class="fa-brands fa-instagram"></i> Instagram</a>
+        </div>
+    </div>
+
+    <!-- JS -->
+    <script src="tennis-script.js"></script>
+</body>
+</html>

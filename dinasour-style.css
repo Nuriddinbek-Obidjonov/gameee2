@@ -1,0 +1,130 @@
+/* Main */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    transition: all 0.5s linear;
+}
+
+#game {
+    width: 100%;
+    height: 100vh;
+    border: solid 1px black;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Background */
+#background {
+    position: absolute;
+    width: 500cm;
+    height: 100%;
+    animation: move 68s infinite linear;
+}
+
+@keyframes move {
+    0% {left: 0;}
+    100% {left: calc(-500cm + 100vw);}
+}
+
+/* Dinasour */
+#character {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    bottom: 100px;
+    left: 100px;
+}
+
+.animate {
+    animation: jump 0.5s;
+}
+
+@keyframes jump {
+    0% {bottom: 100px;}
+    20% {bottom: 170px;}
+    70% {bottom: 170px;}
+    100% {bottom: 100px;}
+}
+
+#dinasour {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+/* Cactus */
+#block {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    bottom: 100px;
+    right: 0;
+    animation: block 6s infinite linear;
+}
+
+@keyframes block {
+    0% {right: 0;}
+    100% {right: 100%;}
+}
+
+.cactus {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+/* Score */
+.score-span {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 170px;
+    height: 50px;
+    border-right: solid white 3px;
+    border-bottom: solid white 3px;
+    border-bottom-right-radius: 5px;
+    font-size: 2rem;
+    font-weight: 700;
+    color: white;
+    background-color: grey;
+    text-align: center;
+    align-items: center;
+}
+
+.max-score {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 220px;
+    height: 50px;
+    border-left: solid white 3px;
+    border-bottom: solid white 3px;
+    border-bottom-left-radius: 5px;
+    font-size: 2rem;
+    font-weight: 700;
+    color: white;
+    background-color: grey;
+    text-align: center;
+    align-items: center;
+}
+
+/* Game over alert */
+#alert-page {
+    visibility: hidden;
+    position: fixed;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%);
+    width: 400px;
+    padding: 1rem;
+    text-align: center;
+    color: white;
+    background-color: rgb(50, 50, 50);
+    border-radius: 5px;
+    z-index: 15;
+}
+
+.score {
+    margin-bottom: 2rem;
+}

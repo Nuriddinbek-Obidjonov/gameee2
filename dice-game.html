@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Necessary meta tags -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <!-- Fontawesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
+
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="dice-game-style.css">
+
+    <!-- Title -->
+    <link rel="icon" href="dice-game-icon.png">
+    <title>Dice Game</title>
+  </head>
+  <body>
+
+    <!-- Mening ismim va link -->
+    <div class="quti">
+      <h4 class="mine">
+        <a href="../gameee.html">
+          <i class="fa-solid fa-gamepad"></i> Play More Game
+        </a>
+      </h4>
+
+      <!-- Max score -->
+      <div class="max-box">
+        <p id="text">Max: 50</p>
+        <input type="range" name="" id="max-score" min="0" max="10" step="1" value="5" oninput="maxScore()">
+      </div>
+  
+      <!-- MAIN SESSION AND PLAYERS -->
+      <main>
+  
+        <!-- Player1 -->
+        <section class="player player--0 player--active">
+          <h2 class="name" id="name--0">Player 1</h2>
+          <p class="score" id="score--0">0</p>
+          <div class="current">
+            <p class="current-label">Current</p>
+            <p class="current-score" id="current--0">0</p>
+          </div>
+        </section>
+  
+        <!-- Player2 -->
+        <section class="player player--1">
+          <h2 class="name" id="name--1">Player 2</h2>
+          <p class="score" id="score--1">0</p>
+          <div class="current">
+            <p class="current-label">Current</p>
+            <p class="current-score" id="current--1">0</p>
+          </div>
+        </section>
+  
+        <!-- Buttons and Images -->
+        <img src="dice-5.png" alt="Playing dice" class="dice" />
+        <button class="btn btn--new"><i class="fa-solid fa-play"></i> New game</button>
+        <button class="btn btn--roll"><i class="fa-solid fa-dice"></i> Roll dice</button>
+        <button class="btn btn--hold"><i class="fa-solid fa-hand-holding-medical"></i> Hold</button>
+  
+      </main>
+    </div>
+
+    <!-- JS -->
+    <script src="dice-game-script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" onclick="jump()">
+<head>
+    <!-- Necessary meta tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- CSS style -->
+    <link rel="stylesheet" href="dinasour-style.css">
+
+    <!-- Title -->
+    <title>Dinasour</title>
+    <link rel="icon" href="dinasour-image.png">
+</head>
+<body>
+    <div id="game">
+        <img id="background" src="dinasour-background.jpg" alt="">
+        <div id="character">
+            <img id="dinasour" src="dinasour.gif" alt="dinasour">
+        </div>
+        <div id="block">
+            <img class="cactus" src="dinasour-cactus.png" alt="cactus">
+        </div>
+        <p class="score-span">Score: <span id="score-span">0</span></p>
+        <p class="max-score">Max Score: <span id="max-score">0</span></p>
+    </div>
+
+    <div id="alert-page">
+        <p class="fs-1 fw-bold">GAME OVER!</p>
+        <p class="score fs-3" id="score"></p>
+        <button class="btn btn-primary mx-3">😊Aww yiss!</button>
+        <button class="btn btn-primary mx-3" onclick="reloadPage()">🔄️New game</button>
+    </div>
+
+    <!-- Javascript -->
+    <script src="dinasour-script.js"></script>
+</body>
+</html>
